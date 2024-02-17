@@ -1,6 +1,5 @@
 package com.example.demo;
 import java.util.Optional;
-import com.example.demo.AccountInterface;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -19,7 +18,7 @@ public class AccountRepository implements AccountInterface{
         return true;
     }
 
-    
+
 }
 
 

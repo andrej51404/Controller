@@ -1,5 +1,4 @@
 package com.example.demo;
-import com.example.demo.AccountInterface;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +7,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class AccountService {
     private AccountInterface accountInterface;
+
+    @Autowired
     public AccountService(AccountInterface accountInterface){
         this.accountInterface = accountInterface;
     }
